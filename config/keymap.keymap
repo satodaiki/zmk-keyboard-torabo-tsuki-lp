@@ -48,11 +48,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans          &trans  &trans  &trans  &trans                  &trans  &trans      &trans     &trans      &trans  &trans
-&trans  &kp ESCAPE      &trans  &trans  &trans  &trans                  &trans  &trans      &trans     &trans      &trans  &trans
-&trans  &kp LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK   &mkp MCLK  &mkp RCLK   &trans  &trans
-&trans  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_UNDO  &trans     &kp K_REDO  &trans  &trans
-&trans  &kp LCTRL       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans      &trans  &trans
+&trans  &trans          &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &kp ESCAPE      &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &kp LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &trans     &mkp MB5   &trans  &trans
+&trans  &kp LCTRL       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
             >;
         };
 
