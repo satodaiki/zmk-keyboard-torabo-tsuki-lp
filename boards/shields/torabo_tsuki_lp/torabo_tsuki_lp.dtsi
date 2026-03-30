@@ -89,8 +89,7 @@
 
     pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
-        status = "okay";
-        device = <&pointing_device>;
+        status = "disabled";
     };
 
     vbatt: vbatt {
