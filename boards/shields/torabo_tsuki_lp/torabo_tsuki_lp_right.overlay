@@ -1,6 +1,16 @@
 #include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include <mouse-gesture.dtsi>
+
+&zip_mouse_gesture {
+    enable-eager-mode;
+
+    prev_tab    { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(LS(TAB))>; };
+    next_tab    { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(TAB)>;     };
+    task_view        { pattern = <GESTURE_UP>;    bindings = <&kp LG(TAB)>;          };
+    vdesk_send_next  { pattern = <GESTURE_DOWN>; bindings = <&kp LG(LC(LS(RIGHT)))>; };
+}
 
 &pointing_listener {
     input-processors =
@@ -14,6 +24,11 @@
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 10>;
     };
+
+    mouse_gesture {
+        layers = <3>
+        input-processors = <&zip_mouse_gesture>;
+    }
 };
 
 &size_s_transform {
