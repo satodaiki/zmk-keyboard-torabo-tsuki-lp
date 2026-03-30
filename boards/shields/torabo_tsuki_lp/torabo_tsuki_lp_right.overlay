@@ -21,7 +21,7 @@
         pattern = <GESTURE_DOWN>;
         bindings = <&kp LG(LC(LS(RIGHT)))>;
     };
-}
+};
 
 &pointing_listener {
     input-processors =
@@ -39,7 +39,7 @@
     mouse_gesture {
         layers = <3>;
         input-processors = <&zip_mouse_gesture>;
-    }
+    };
 };
 
 &size_s_transform {
