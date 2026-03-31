@@ -12,4 +12,4 @@
             bindings = <&mouse_gesture_on &mouse_gesture_off>;
         };
     };
-}
+};
