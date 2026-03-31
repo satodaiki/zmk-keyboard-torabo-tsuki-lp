@@ -71,15 +71,6 @@
         wakeup-source;
     };
 
-    layer_listeners {
-        compatible = "zmk,layer-listeners";
-
-        gesture {
-            layers = <4>;
-            bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        };
-    };
-
     leds {
         compatible = "gpio-leds";
         status_led: status_led {
@@ -99,7 +90,21 @@
 
     pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
-        status = "disabled";
+        status = "okay";
+
+        gesture {
+            layers = <4>;
+            input-processors = <&zip_mouse_gesture>;
+        };
+    };
+
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        gesture {
+            layers = <4>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
     };
 
     vbatt: vbatt {
