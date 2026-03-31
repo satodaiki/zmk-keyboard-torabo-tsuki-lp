@@ -1,6 +1,7 @@
 #include <zephyr/dt-bindings/gpio/nordic-nrf-gpio.h>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "torabo_tsuki_lp_layouts.dtsi"
+#include <mouse-gesture.dtsi>
 
 / {
     chosen {
@@ -68,6 +69,15 @@
         ;
 
         wakeup-source;
+    };
+
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        gesture {
+            layers = <4>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
     };
 
     leds {

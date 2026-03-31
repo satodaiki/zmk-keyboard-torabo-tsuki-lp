@@ -2,7 +2,27 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/keys.h>
-#include <mouse-gesture.dtsi>
+
+&zip_mouse_gesture {
+    enable-eager-mode;
+
+    prev_tab {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LC(LS(TAB))>;
+    };
+    next_tab {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LC(TAB)>;
+    };
+    task_view {
+        pattern = <GESTURE_UP>;
+        bindings = <&kp LG(TAB)>;
+    };
+    vdesk_send_next {
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LG(LC(LS(RIGHT)))>;
+    };
+};
 
 &pointing_listener {
     input-processors =
@@ -17,7 +37,7 @@
             <&zip_scroll_scaler 1 10>;
     };
 
-    mouse_gesture {
+    gesture {
         layers = <4>;
         input-processors = <&zip_mouse_gesture>;
     };
