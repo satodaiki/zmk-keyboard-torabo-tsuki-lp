@@ -90,16 +90,7 @@
 
     pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
-        status = "okay";
-    };
-
-    layer_listeners {
-        compatible = "zmk,layer-listeners";
-
-        gesture {
-            layers = <4>;
-            bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        };
+        status = "disabled";
     };
 
     vbatt: vbatt {
