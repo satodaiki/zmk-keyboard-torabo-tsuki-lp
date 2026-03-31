@@ -4,7 +4,7 @@
 };
 
 /{
-    layer_listeners {
+    layer_listeners: layer_listeners {
         compatible = "zmk,layer-listeners";
 
         gesture {
