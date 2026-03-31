@@ -91,11 +91,6 @@
     pointing_listener: pointing_listener {
         compatible = "zmk,input-listener";
         status = "okay";
-
-        gesture {
-            layers = <4>;
-            input-processors = <&zip_mouse_gesture>;
-        };
     };
 
     layer_listeners {
