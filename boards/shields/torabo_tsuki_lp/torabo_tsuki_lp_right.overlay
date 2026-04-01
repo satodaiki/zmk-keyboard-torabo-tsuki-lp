@@ -3,17 +3,6 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <mouse-gesture.dtsi>
 
-/ {
-    layer_listeners {
-        compatible = "zmk,layer-listeners";
-
-        gesture {
-            layers = <4>;
-            bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        };
-    };
-};
-
 &pointing_listener {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
