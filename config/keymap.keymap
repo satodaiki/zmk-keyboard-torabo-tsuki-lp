@@ -7,19 +7,19 @@
     enable-eager-mode;
 
     prev_tab {
-        pattern = <GESTURE_LEFT>;
+        pattern = <GESTURE_RIGHT>;
         bindings = <&kp LC(LS(TAB))>;
     };
     next_tab {
-        pattern = <GESTURE_RIGHT>;
+        pattern = <GESTURE_LEFT>;
         bindings = <&kp LC(TAB)>;
     };
     task_view {
-        pattern = <GESTURE_UP>;
+        pattern = <GESTURE_DOWN>;
         bindings = <&kp LG(TAB)>;
     };
     vdesk_send_next {
-        pattern = <GESTURE_DOWN>;
+        pattern = <GESTURE_UP>;
         bindings = <&kp LG(LC(LS(RIGHT)))>;
     };
 };
