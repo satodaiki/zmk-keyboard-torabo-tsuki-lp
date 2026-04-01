@@ -2,14 +2,3 @@
     status = "okay";
     device = <&pointing_device>;
 };
-
-/{
-    layer_listeners: layer_listeners {
-        compatible = "zmk,layer-listeners";
-
-        gesture {
-            layers = <4>;
-            bindings = <&mouse_gesture_on &mouse_gesture_off>;
-        };
-    };
-};

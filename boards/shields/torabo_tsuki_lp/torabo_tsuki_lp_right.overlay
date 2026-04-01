@@ -43,6 +43,17 @@
     };
 };
 
+/{
+    layer_listeners: layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        gesture {
+            layers = <4>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+    };
+};
+
 &size_s_transform {
     col-offset = <7>;
 };
