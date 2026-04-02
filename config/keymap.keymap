@@ -30,6 +30,32 @@
         };
     };
 
+    zip_mouse_gesture_for_mac: zip_mouse_gesture_for_mac {
+        compatible = "zmk,input-processor-mouse-gesture";
+        #input-processor-cells = <0>;
+        enable-eager-mode;
+
+        prev_tab {
+            pattern = <GESTURE_RIGHT>;
+            bindings = <&kp LG(LS(TAB))>;
+        };
+
+        next_tab {
+            pattern = <GESTURE_LEFT>;
+            bindings = <&kp LG(TAB)>;
+        };
+
+        vdesk {
+            pattern = <GESTURE_DOWN>;
+            bindings = <&kp LC(UP)>;
+        };
+
+        vdesk_send_next {
+            pattern = <GESTURE_UP>;
+            bindings = <&kp LC(DOWN)>;
+        };
+    };
+
     combos { compatible = "zmk,combos"; };
 
     keymap {
