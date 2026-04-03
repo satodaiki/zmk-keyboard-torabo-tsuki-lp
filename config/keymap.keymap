@@ -69,14 +69,14 @@
         bt_win_0: bt_win_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to 5>;
+            bindings = <&bt BT_SEL 0 &to 0>;
             label = "BT_WIN_0";
         };
 
         bt_win_1: bt_win_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 5>;
+            bindings = <&bt BT_SEL 1 &to 0>;
             label = "BT_WIN_1";
         };
     };
@@ -139,8 +139,8 @@
 &none  &none             &none     &none          &none  &none                                           &none        &none  &none      &none      &none              &none
 &none  &kp Q             &kp W     &kp E          &kp R  &kp T                                           &kp Y        &kp U  &kp I      &kp O      &kp P              &none
 &none  &kp A             &kp S     &kp D          &kp F  &kp G               &none        &none          &kp H        &kp J  &kp K      &kp L      &kp SEMI           &none
-&none  &kp Z             &kp X     &kp C          &kp V  &kp B               &lt 2 SQT    &kp MINUS      &kp N        &kp M  &kp COMMA  &kp DOT    &kp SLASH          &none
-&none  &kp LEFT_COMMAND  &kp LALT  &kp BACKSLASH  &mo 3  &mt LEFT_SHIFT TAB  &lt 4 SPACE  &kp BACKSPACE  &lt 1 ENTER  &none  &none      &kp EQUAL  &kp RIGHT_COMMAND  &none
+&none  &kp Z             &kp X     &kp C          &kp V  &kp B               &lt 7 SQT    &kp MINUS      &kp N        &kp M  &kp COMMA  &kp DOT    &kp SLASH          &none
+&none  &kp LEFT_COMMAND  &kp LALT  &kp BACKSLASH  &mo 8  &mt LEFT_SHIFT TAB  &lt 9 SPACE  &kp BACKSPACE  &lt 6 ENTER  &none  &none      &kp EQUAL  &kp RIGHT_COMMAND  &none
             >;
         };
 
