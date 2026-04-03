@@ -93,6 +93,20 @@
         status = "disabled";
     };
 
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        gesture_win {
+            layers = <4>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+
+        gesture_mac {
+            layers = <9>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+    };
+
     vbatt: vbatt {
         // Disable default battery monitoring
         status = "disabled";
