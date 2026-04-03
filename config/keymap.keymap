@@ -35,14 +35,14 @@
         #input-processor-cells = <0>;
         enable-eager-mode;
 
-        prev_tab {
+        vdesk_prev {
             pattern = <GESTURE_RIGHT>;
-            bindings = <&kp LG(LS(TAB))>;
+            bindings = <&kp LC(LEFT)>;
         };
 
-        next_tab {
+        vdesk_next {
             pattern = <GESTURE_LEFT>;
-            bindings = <&kp LG(TAB)>;
+            bindings = <&kp LC(RIGHT)>;
         };
 
         vdesk {
@@ -50,7 +50,7 @@
             bindings = <&kp LC(UP)>;
         };
 
-        vdesk_send_next {
+        vdesk_down {
             pattern = <GESTURE_UP>;
             bindings = <&kp LC(DOWN)>;
         };
