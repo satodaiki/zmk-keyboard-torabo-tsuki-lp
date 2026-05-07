@@ -126,11 +126,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans     &trans     &trans   &trans        &trans                        &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans     &trans     &trans   &trans        &bt BT_CLR                    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &bt_win_0  &bt_win_1  &bt_mac  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans     &trans     &trans   &trans        &trans        &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
-&trans  &trans     &trans     &trans   &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans     &trans     &trans   &trans        &trans                         &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans     &trans     &trans   &trans        &bt BT_CLR                     &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &bt_win_0  &bt_win_1  &bt_mac  &bt BT_SEL 3  &bt BT_SEL 4   &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans     &trans     &trans   &trans        &kp LC(SPACE)  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+&trans  &trans     &trans     &trans   &trans        &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
             >;
         };
 
@@ -176,11 +176,11 @@
 
         layer_9 {
             bindings = <
-&trans  &trans     &trans     &trans   &trans        &trans                        &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans     &trans     &trans   &trans        &bt BT_CLR                    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &bt_win_0  &bt_win_1  &bt_mac  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans     &trans     &trans   &trans        &trans        &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
-&trans  &trans     &trans     &trans   &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans     &trans     &trans   &trans        &trans                          &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans     &trans     &trans   &trans        &bt BT_CLR                      &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &bt_win_0  &bt_win_1  &bt_mac  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans     &trans     &trans   &trans        &kp LG(ESCAPE)  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+&trans  &trans     &trans     &trans   &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
             >;
         };
     };
