@@ -146,11 +146,11 @@
 
         layer_6 {
             bindings = <
-&trans  &trans            &trans     &trans  &trans  &trans                                   &trans    &trans     &trans    &trans         &trans         &trans
-&trans  &kp GRAVE         &trans     &trans  &trans  &trans                                   &trans    &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp MINUS      &trans
-&trans  &kp TAB           &trans     &trans  &trans  &trans          &trans           &trans  &kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT      &kp EQUAL      &trans
-&trans  &kp LALT          &trans     &trans  &trans  &trans          &kp PRINTSCREEN  &trans  &kp END   &trans     &trans    &trans         &kp BACKSLASH  &trans
-&trans  &kp LEFT_COMMAND  &kp LCTRL  &trans  &trans  &kp LEFT_SHIFT  &trans           &trans  &trans    &trans     &trans    &trans         &trans         &trans
+&trans  &trans            &trans     &trans  &trans  &trans                                   &trans         &trans     &trans    &trans         &trans         &trans
+&trans  &kp GRAVE         &trans     &trans  &trans  &trans                                   &trans         &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp MINUS      &trans
+&trans  &kp TAB           &trans     &trans  &trans  &trans          &trans           &trans  &kp LG(LEFT)   &kp LEFT   &kp DOWN  &kp RIGHT      &kp EQUAL      &trans
+&trans  &kp LALT          &trans     &trans  &trans  &trans          &kp PRINTSCREEN  &trans  &kp LG(RIGHT)  &trans     &trans    &trans         &kp BACKSLASH  &trans
+&trans  &kp LEFT_COMMAND  &kp LCTRL  &trans  &trans  &kp LEFT_SHIFT  &trans           &trans  &trans         &trans     &trans    &trans         &trans         &trans
             >;
         };
 
